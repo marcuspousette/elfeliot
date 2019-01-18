@@ -1,0 +1,156 @@
+body {
+  font-family: "Open Sans", "Roboto",  sans-serif!important;
+  font-weight: 300;
+  /* Fixes footer to bottom of page (1): */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h4, h5 {
+  font-family: "Oswald" !important;
+  font-weight: 100!important;
+}
+/* Fixes footer to bottom of page (2):*/
+main {
+  flex: 1 0 auto;
+}
+.page-break{
+  height: 10vh;
+}
+.box {
+  height: 50vh;
+}
+.dubble-box{
+  height: 100vh;
+}
+.box-for-large{
+  height: 70vh;
+}
+.box-for-form{
+  height: 100vh;
+}
+.small-box {
+  height: 40vh;
+  overflow: auto;
+}
+.logo-size-l {
+  height: 30vh;
+  width: 30vw;
+  margin-left: 33vw;
+}
+.logo-size-s {
+  height: 30vh;
+  width: 50vw;
+  margin-left: 25vw;
+}
+.img-type-1{
+  height: 50vh;
+  background-size: cover;
+}
+.img-type-1-for-large{
+  height: 70vh;
+  background-size: cover;
+}
+.house-img {
+  background-image: url("../img/image002.png");
+}
+.yard-img{
+  background-image: url("../img/image003.jpg");
+}
+.grass-img{
+  background-image: url("../img/image005.jpg");
+}
+.side-by-side-img {
+  height: 45vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.line-break{
+  border-bottom: 1px solid black;
+}
+
+/* PRELOADER CSS */
+#preloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background: #fff;
+}
+
+/* different devices */
+
+/**
+*   Large screens: ( > 800px )
+**/
+.titleText {
+  font-size: 55px!important;
+  line-height:50px!important;
+}
+
+.subtitleText {
+  font-size: 35px!important;
+}
+
+.breadText {
+  font-size: 28px!important;
+}
+.tinyText {
+  font-size: 24px!important;
+}
+
+/**
+*  MEDIUM PHONES & PADS 600px - 800px
+***/
+@media screen and (max-width: 800px) {
+  .titleText {
+    font-size: 45px!important;
+    line-height:50px!important;
+  }
+
+  .subtitleText {
+    font-size: 26px!important;
+  }
+
+  .breadText {
+    font-size: 24px!important;
+  }
+  .tinyText {
+    font-size: 20px!important;
+  }
+
+  .btn-large {
+    transform: scale(1.35)!important;
+  }
+  .modal .btn-large {
+    margin:20px;
+  }
+}
+
+/**
+*  SMALL PHONES 0 - 600px
+***/
+@media screen and (max-width: 600px) {
+  .titleText {
+    font-size: 30px!important;
+    line-height:50px!important;
+  }
+
+  .subtitleText {
+    font-size: 24px!important;
+  }
+
+  .breadText {
+    font-size: 20px!important;
+  }
+  .tinyText {
+    font-size: 16px!important;
+  }
+
+  .btn-large {
+    transform: scale(1.3)!important;
+  }
+}
