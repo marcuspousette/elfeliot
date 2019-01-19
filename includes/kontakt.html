@@ -2,9 +2,62 @@
 <!-- CONTACT MODAL -->
 <div id="modal1" class="modal modal-fixed-footer">
 <div class="modal-content">
-  lorem
+  <div class="titleText center-align" style="padding: 10vh 0px;">
+    <span class="bold-font">Kontakta oss</span>
+  </div>
+  <!-- For large and med-->
+  <div class="x-small-box container center-align breadText hide-on-small-only">
+    Om ni har någon som helst fråga, hör gärna av er!
+    <br><br>
+    E-mail: <span class="bold-font">elliot.berthold@outlook</span>
+    <br>
+    Telefon: <span class="bold-font">0707716601</span>
+  </div>
+
+  <div class="row">
+   <form class="col s12">
+     <div class="row">
+       <div class="input-field col s12">
+         <i class="material-icons prefix">account_circle</i>
+         <input id="icon_prefix" type="text" class="validate">
+         <label for="icon_prefix">Namn</label>
+       </div>
+       <div class="input-field col s12">
+         <i class="material-icons prefix">phone</i>
+         <input id="icon_telephone" type="tel" class="validate">
+         <label for="icon_telephone">Telefon</label>
+       </div>
+       <div class="input-field col s12">
+         <i class="material-icons prefix">email</i>
+         <input id="email" type="email" class="validate">
+         <label for="email">Email</label>
+       </div>
+       <div class="input-field col s12">
+         <i class="material-icons prefix">map</i>
+         <input id="adress" type="text" class="validate">
+         <label for="adress">Adress</label>
+       </div>
+       <div class="input-field col s12">
+         <i class="material-icons prefix">message</i>
+         <input id="subject" type="text" class="validate">
+         <label for="subject">Ämne</label>
+       </div>
+       <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Meddelande</label>
+        </div>
+      </div>
+      <div class="container center-align">
+        <button class="btn waves-effect waves-light" type="submit" name="action">
+          Skicka
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+     </div>
+   </form>
+ </div>
 </div>
 <div class="modal-footer">
-  <a href="#!" class="modal-action modal-close btn black">Stäng</a>
 </div>
 </div>

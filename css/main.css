@@ -15,6 +15,9 @@ h4, h5 {
 main {
   flex: 1 0 auto;
 }
+.bold-font{
+  font-weight: bold!important;
+}
 .page-break{
   height: 10vh;
 }
@@ -28,10 +31,14 @@ main {
   height: 70vh;
 }
 .box-for-form{
-  height: 100vh;
+  height: 100vh;+
 }
 .small-box {
   height: 40vh;
+  overflow: auto;
+}
+.x-small-box{
+  height: 25vh;
   overflow: auto;
 }
 .logo-size-l {

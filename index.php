@@ -64,20 +64,31 @@
       <img class="logo-size-s" src="img/elfeliot.png" alt="elfeliot">
   </div>
 
-  <div class="small-box white center-align container">
-    <div class="subtitleText">Vad gör vi?</div>
-    <!-- Large -->
-    <div class="breadText hide-on-med-and-down">
-      Vi samarbetar med Bygghemma Sverige för att erbjuda professionell underhåll, reparation och installation av robotgräsklippare.
+  <div class="small-box white center-align light-blue lighten-5">
+    <div class="container" style="padding-top: 5vh;">
+      <div class="subtitleText">Vad gör vi?</div>
+      <!-- Large -->
+      <div class="breadText hide-on-med-and-down">
+        Vi samarbetar med Bygghemma Sverige för att erbjuda professionell underhåll, reparation och installation av robotgräsklippare.
+      </div>
+      <!-- Med and down -->
+      <div class="breadText hide-on-large-only">
+        Professionell underhåll, reparation och installation av robotgräsklippare.
+      </div>
+      <div class="tinyText">
+        <br>
+        Telefon: 0707716601
+        <br>
+        E-mail: elliot.berthold@outlook
+      </div>
     </div>
-    <!-- Med and down -->
-    <div class="breadText hide-on-large-only">
-      Professionell underhåll, reparation och installation av robotgräsklippare.
-    </div>
-    <div class="tinyText">
-      Telefon: 0707716601
-      <br>
-      E-mail: elliot.berthold@outlook
+  </div>
+
+  <div class="x-small-box container center-align">
+    <div style="padding-top: 5vh;">
+      <span class="subtitleText">Våra tjänster</span>
+      <br><br>
+      <span class="breadText">Här för att hjälpa</span>
     </div>
   </div>
 
@@ -148,7 +159,7 @@
 
 
 <div class="container line-break valign-wrapper center-align" style="height: 20vh;">
-  <div class="container">
+  <div class="container bold-font">
     Tar ni kontakt med oss återkommer vi inom 48 timmar och under normala omständigheter hjälper vi dig innom två veckor så att du kan njuta av en fin gräsmatta.
   </div>
 </div>
@@ -167,9 +178,67 @@
   </div>
 </div>
 
+<!-- For large -->
+<div class="hide-on-med-and-down row  box">
+  <div class="" style="padding-top: 5vh;">
+    <div class="col l3 offset-l1 center-align tinyText">
+      <span style="font-weight: bold">Kontakta oss</span>
+      <br><br>
+      Om ni har någon som helst fråga, hör gärna av er!
+      <br><br>
+      E-mail: elliot.berthold@outlook
+      <br>
+      Telefon: 0707716601
+    </div>
+    <form class="col l7">
+      <div class="row">
+        <div class="input-field col l6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">Namn</label>
+        </div>
+        <div class="input-field col l6">
+          <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" class="validate">
+          <label for="icon_telephone">Telefon</label>
+        </div>
+
+        <div class="input-field col l6">
+          <i class="material-icons prefix">email</i>
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field col l6">
+          <i class="material-icons prefix">map</i>
+          <input id="adress" type="text" class="validate">
+          <label for="adress">Adress</label>
+        </div>
+
+        <div class="input-field col l10 offset-l1">
+          <i class="material-icons prefix">message</i>
+          <input id="subject" type="text" class="validate">
+          <label for="subject">Ämne</label>
+        </div>
+        <div class="row">
+         <div class="input-field col l8 offset-l2">
+           <textarea id="textarea1" class="materialize-textarea"></textarea>
+           <label for="textarea1">Meddelande</label>
+         </div>
+       </div>
+       <div class="col l2 offset-l5 center-align">
+         <button class="btn waves-effect waves-light" type="submit" name="action">
+           Skicka
+           <i class="material-icons right">send</i>
+         </button>
+       </div>
+      </div>
+    </form>
+  </div>
+</div>
+
 <!-- For med and down -->
 <div class="hide-on-large-only">
-  <div class="box container center-align" style="padding-top: 15vh;">
+  <div class="box container center-align breadText" style="padding-top: 10vh;">
     <span style="font-weight: bold">Kontakta oss</span>
     <br><br>
     Om ni har någon som helst fråga, hör gärna av er!
@@ -180,46 +249,46 @@
   </div>
   <div class="box-for-form container center-align">
     <div class="row">
-   <form class="col s12">
-     <div class="row">
-       <div class="input-field col s12">
-         <i class="material-icons prefix">account_circle</i>
-         <input id="icon_prefix" type="text" class="validate">
-         <label for="icon_prefix">Namn</label>
-       </div>
-       <div class="input-field col s12">
-         <i class="material-icons prefix">phone</i>
-         <input id="icon_telephone" type="tel" class="validate">
-         <label for="icon_telephone">Telefon</label>
-       </div>
-       <div class="input-field col s12">
-         <i class="material-icons prefix">email</i>
-         <input id="email" type="email" class="validate">
-         <label for="email">Email</label>
-       </div>
-       <div class="input-field col s12">
-         <i class="material-icons prefix">map</i>
-         <input id="adress" type="text" class="validate">
-         <label for="adress">Adress</label>
-       </div>
-       <div class="input-field col s12">
-         <i class="material-icons prefix">message</i>
-         <input id="subject" type="text" class="validate">
-         <label for="subject">Ämne</label>
-       </div>
+     <form class="col s12">
        <div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Meddelande</label>
+         <div class="input-field col s12">
+           <i class="material-icons prefix">account_circle</i>
+           <input id="icon_prefix" type="text" class="validate">
+           <label for="icon_prefix">Namn</label>
+         </div>
+         <div class="input-field col s12">
+           <i class="material-icons prefix">phone</i>
+           <input id="icon_telephone" type="tel" class="validate">
+           <label for="icon_telephone">Telefon</label>
+         </div>
+         <div class="input-field col s12">
+           <i class="material-icons prefix">email</i>
+           <input id="email" type="email" class="validate">
+           <label for="email">Email</label>
+         </div>
+         <div class="input-field col s12">
+           <i class="material-icons prefix">map</i>
+           <input id="adress" type="text" class="validate">
+           <label for="adress">Adress</label>
+         </div>
+         <div class="input-field col s12">
+           <i class="material-icons prefix">message</i>
+           <input id="subject" type="text" class="validate">
+           <label for="subject">Ämne</label>
+         </div>
+         <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Meddelande</label>
+          </div>
         </div>
-      </div>
-      <button class="btn waves-effect waves-light" type="submit" name="action">
-        Skicka
-        <i class="material-icons right">send</i>
-      </button>
-     </div>
-   </form>
- </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">
+          Skicka
+          <i class="material-icons right">send</i>
+        </button>
+       </div>
+     </form>
+   </div>
   </div>
 </div>
 
