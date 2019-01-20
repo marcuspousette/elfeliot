@@ -51,21 +51,23 @@
 <?php include("includes/preloader.html") ?>
 <!-- NAVBAR -->
 <?php include("includes/navbar.php") ?>
-<!-- Villkor -->
+<!-- Villkor modal-->
 <?php include("includes/villkor.html"); ?>
+<!-- Priser modal -->
+<?php include("includes/priser.html"); ?>
 <!-- Page Content -->
 <main>
   <!-- Large -->
   <div class="box-for-large white img-type-1-for-large house-img hide-on-med-and-down">
-      <img class="logo-size-l" src="img/elfeliot.png" alt="elfeliot">
+      <img class="logo-size-l introTxt" src="img/elfeliot.png" alt="elfeliot">
   </div>
   <!-- Med and down -->
   <div class="box white img-type-1 house-img hide-on-large-only">
-      <img class="logo-size-s" src="img/elfeliot.png" alt="elfeliot">
+      <img class="logo-size-s introTxt" src="img/elfeliot.png" alt="elfeliot">
   </div>
 
-  <div class="small-box white center-align light-blue lighten-5">
-    <div class="container" style="padding-top: 5vh;">
+  <div class="small-box white center-align elliot-blue white-text">
+    <div class="container introTxt" style="padding-top: 5vh;">
       <div class="subtitleText">Vad gör vi?</div>
       <!-- Large -->
       <div class="breadText hide-on-med-and-down">
@@ -105,7 +107,7 @@
         </div>
         <br>
         <!-- Modal Trigger -->
-       <a class="waves-effect waves-light btn modal-trigger" href="#modal-villkor">Villkor</a>
+       <a class="waves-effect waves-light btn modal-trigger elliot-blue" href="#modal-villkor">Villkor</a>
       </div>
     </div>
   </div>
@@ -138,7 +140,7 @@
         </div>
         <br>
         <!-- Modal Trigger -->
-       <a class="waves-effect waves-light btn modal-trigger" href="#modal-villkor">Villkor</a>
+       <a class="waves-effect waves-light btn modal-trigger elliot-blue" href="#modal-villkor">Villkor</a>
       </div>
     </div>
   </div>
@@ -226,7 +228,7 @@
          </div>
        </div>
        <div class="col l2 offset-l5 center-align">
-         <button class="btn waves-effect waves-light" type="submit" name="action">
+         <button class="btn waves-effect waves-light elliot-blue" type="submit" name="action">
            Skicka
            <i class="material-icons right">send</i>
          </button>
@@ -282,7 +284,7 @@
             <label for="textarea1">Meddelande</label>
           </div>
         </div>
-        <button class="btn waves-effect waves-light" type="submit" name="action">
+        <button class="btn waves-effect waves-light elliot-blue" type="submit" name="action">
           Skicka
           <i class="material-icons right">send</i>
         </button>
@@ -295,6 +297,7 @@
 </main>
 
 <!-- FOOTER -->
-<?php require_once("includes/footer.html") ?>
+<?php require_once('includes/footer.html') ?>
+<!-- require_once('includes/php/mailer.php') -->
 </body>
 </html>

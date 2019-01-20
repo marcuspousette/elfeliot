@@ -74,7 +74,11 @@ main {
   background-size: cover;
 }
 .line-break{
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #007CC9;
+}
+.obs-border{
+  border-bottom: 2px solid red;
+  border-top: 2px solid red;
 }
 
 /* PRELOADER CSS */
@@ -161,3 +165,40 @@ main {
     transform: scale(1.3)!important;
   }
 }
+
+/* Color schema */
+.elliot-blue{
+  background-color: #007CC9!important;
+}
+.elliot-blue-text{
+  color: #007CC9!important;
+}
+
+/******* form colors *********/
+
+/* label color */
+   .input-field label {
+     color: #000;
+   }
+   /* label focus color */
+   .input-field input:focus + label {
+     color: #007CC9!important;
+   }
+   .input-field input:focus {
+     border-bottom: 1px solid #007CC9!important;
+     box-shadow: 0 1px 0 0 #007CC9!important;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #4caf50!important;
+     box-shadow: 0 1px 0 0 #4caf50!important;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #f44336!important;
+     box-shadow: 0 1px 0 0 #f44336!important;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #007CC9!important;
+   }

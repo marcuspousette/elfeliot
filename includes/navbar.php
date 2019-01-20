@@ -14,10 +14,20 @@
       </a>
       <a href="#" data-target="slide-out" class="sidenav-trigger right black-text"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down" id="desktop-demo">
-        <li><a class="black-text" href="">HEM</a></li>
+        <li>
+          <a class="black-text" href="">HEM</a>
+        </li>
         <li>
           <!-- Modal Trigger -->
           <a class="black-text modal-trigger" href="#modal1" id="kontakt-animations">KONTAKT</a>
+        </li>
+        <li>
+          <!-- Modal Trigger -->
+          <a class="black-text modal-trigger" href="#modal-villkor">VILLKOR</a>
+        </li>
+        <li>
+          <!-- Modal Trigger -->
+          <a class="black-text modal-trigger" href="#modal-priser">PRISER</a>
         </li>
       </ul>
 
@@ -28,23 +38,18 @@
 
 <ul id="slide-out" class="sidenav">
   <li>
-      <a class="black-text" href="">
-          HEM
-      </a>
+    <a class="black-text" href="">HEM</a>
   </li>
   <li>
-      <a class="black-text modal-trigger" href="#modal1" id="kontakt-animations">
-        KONTAKT
-      </a>
+    <a class="black-text modal-trigger" href="#modal1" id="kontakt-animations">KONTAKT</a>
+  </li>
+  <li>
+    <a class="black-text modal-trigger" href="#modal-villkor">VILLKOR</a>
+  </li>
+  <li>
+    <a class="black-text modal-trigger" href="#modal-priser">PRISER</a>
   </li>
 </ul>
-
-<!-- NEWS Dropdown -->
-<ul  id='newsDropdownMobile' class='dropdown-content'>
-  <li><a href="" class="">Nyheter</a></li>
-  <li><a href="" class="">Flöde</a></li>
-</ul>
-
 
   <?php include("kontakt.html"); ?>
 </div>
