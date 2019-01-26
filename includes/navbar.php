@@ -4,13 +4,13 @@
   <nav>
     <div class="nav-wrapper z-depth-2 white black-text">
       <a href="/" class="brand-logo hide-on-med-and-down">
-        <img style="width: 140px; height: 64px;" src="img/elfeliot.png" />
+        <img style="width: 75.6px; height: 60px;" src="img/elfeliot.png" />
       </a>
       <a href="" class="brand-logo hide-on-large-only hide-on-small-only">
-        <img style="width: 140px; height: 64px;" src="img/elfeliot.png" />
+        <img style="width: 75.6px; height: 60px;" src="img/elfeliot.png" />
       </a>
       <a href=""  class="brand-logo hide-on-med-and-up" >
-        <img style="width: 140px; height: 56px;" src="img/elfeliot.png" />
+        <img style="width: 65.9px; height: 56px;" src="img/elfeliot.png" />
       </a>
       <a href="#" data-target="slide-out" class="sidenav-trigger right black-text"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down" id="desktop-demo">

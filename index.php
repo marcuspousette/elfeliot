@@ -58,11 +58,11 @@
 <!-- Page Content -->
 <main>
   <!-- Large -->
-  <div class="box-for-large white img-type-1-for-large house-img hide-on-med-and-down">
+  <div class="box-for-large white img-type-1-for-large house-img hide-on-med-and-down valign-wrapper">
       <img class="logo-size-l introTxt" src="img/elfeliot.png" alt="elfeliot">
   </div>
   <!-- Med and down -->
-  <div class="box white img-type-1 house-img hide-on-large-only">
+  <div class="box white img-type-1 house-img hide-on-large-only valign-wrapper">
       <img class="logo-size-s introTxt" src="img/elfeliot.png" alt="elfeliot">
   </div>
 
@@ -192,41 +192,40 @@
       <br>
       Telefon: 0707716601
     </div>
-    <form class="col l7">
+    <form class="col l7" action="./includes/php/mailer.php" method="post">
       <div class="row">
         <div class="input-field col l6">
           <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">Namn</label>
+          <input name="name" id="icon_prefix" type="text" class="validate">
+          <label for="name">Namn</label>
         </div>
         <div class="input-field col l6">
           <i class="material-icons prefix">phone</i>
-          <input id="icon_telephone" type="tel" class="validate">
-          <label for="icon_telephone">Telefon</label>
+          <input name="number" id="icon_telephone" type="tel" class="validate">
+          <label for="number">Telefon</label>
         </div>
 
         <div class="input-field col l6">
           <i class="material-icons prefix">email</i>
-          <input id="email" type="email" class="validate">
+          <input name="email" id="email" type="email" class="validate">
           <label for="email">Email</label>
         </div>
         <div class="input-field col l6">
           <i class="material-icons prefix">map</i>
-          <input id="adress" type="text" class="validate">
+          <input name="adress" id="adress" type="text" class="validate">
           <label for="adress">Adress</label>
         </div>
 
         <div class="input-field col l10 offset-l1">
-          <i class="material-icons prefix">message</i>
-          <input id="subject" type="text" class="validate">
+          <i class="material-icons prefix">assignment</i>
+          <input name="subject" id="subject" type="text" class="validate">
           <label for="subject">Ämne</label>
         </div>
-        <div class="row">
-         <div class="input-field col l8 offset-l2">
-           <textarea id="textarea1" class="materialize-textarea"></textarea>
-           <label for="textarea1">Meddelande</label>
-         </div>
-       </div>
+        <div class="input-field col l8 offset-l2">
+          <i class="material-icons prefix">message</i>
+          <input name="message" id="message" type="text" class="validate">
+          <label for="message">Meddelande</label>
+        </div>
        <div class="col l2 offset-l5 center-align">
          <button class="btn waves-effect waves-light elliot-blue" type="submit" name="action">
            Skicka
@@ -251,38 +250,39 @@
   </div>
   <div class="box-for-form container center-align">
     <div class="row">
-     <form class="col s12">
+     <form class="col s12" action="./includes/php/mailer.php" method="post">
        <div class="row">
          <div class="input-field col s12">
            <i class="material-icons prefix">account_circle</i>
-           <input id="icon_prefix" type="text" class="validate">
-           <label for="icon_prefix">Namn</label>
+           <input name="name" id="icon_prefix" type="text" class="validate">
+           <label for="name">Namn</label>
          </div>
          <div class="input-field col s12">
            <i class="material-icons prefix">phone</i>
-           <input id="icon_telephone" type="tel" class="validate">
-           <label for="icon_telephone">Telefon</label>
+           <input name="number" id="icon_telephone" type="tel" class="validate">
+           <label for="number">Telefon</label>
          </div>
          <div class="input-field col s12">
            <i class="material-icons prefix">email</i>
-           <input id="email" type="email" class="validate">
+           <input name="email" id="email" type="email" class="validate">
            <label for="email">Email</label>
          </div>
          <div class="input-field col s12">
            <i class="material-icons prefix">map</i>
-           <input id="adress" type="text" class="validate">
+           <input name="adress" id="adress" type="text" class="validate">
            <label for="adress">Adress</label>
          </div>
          <div class="input-field col s12">
-           <i class="material-icons prefix">message</i>
-           <input id="subject" type="text" class="validate">
+           <i class="material-icons prefix">assignment</i>
+           <input name="subject" id="subject" type="text" class="validate">
            <label for="subject">Ämne</label>
          </div>
-         <div class="row">
-          <div class="input-field col s12">
-            <textarea id="textarea1" class="materialize-textarea"></textarea>
-            <label for="textarea1">Meddelande</label>
-          </div>
+         <div class="input-field col s12">
+           <i class="material-icons prefix">message</i>
+           <input name="message" id="message" type="text" class="validate">
+           <label for="message">Meddelande</label>
+         </div>
+
         </div>
         <button class="btn waves-effect waves-light elliot-blue" type="submit" name="action">
           Skicka
@@ -297,7 +297,8 @@
 </main>
 
 <!-- FOOTER -->
-<?php require_once('includes/footer.html') ?>
-<!-- require_once('includes/php/mailer.php') -->
+<?php
+  require_once('includes/footer.html');
+ ?>
 </body>
 </html>

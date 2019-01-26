@@ -42,14 +42,14 @@ main {
   overflow: auto;
 }
 .logo-size-l {
-  height: 30vh;
-  width: 30vw;
-  margin-left: 33vw;
+  height: 340px;
+  width: 400px;
+  margin: auto;
 }
 .logo-size-s {
-  height: 30vh;
-  width: 50vw;
-  margin-left: 25vw;
+  height: 170px;
+  width: 200px;
+  margin: auto;
 }
 .img-type-1{
   height: 50vh;
@@ -172,6 +172,9 @@ main {
 }
 .elliot-blue-text{
   color: #007CC9!important;
+}
+#grad {
+  background-image: linear-gradient(to right, #007CC9 , yellow);
 }
 
 /******* form colors *********/
