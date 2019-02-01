@@ -51,5 +51,5 @@
   </li>
 </ul>
 
-  <?php include("kontakt.html"); ?>
+  <?php include("contact.php"); ?>
 </div>

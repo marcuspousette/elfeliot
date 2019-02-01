@@ -176,6 +176,12 @@ main {
 #grad {
   background-image: linear-gradient(to right, #007CC9 , yellow);
 }
+.my-red{
+  background: #EA4617!important;
+}
+.my-orange{
+  background: #F96816!important;
+}
 
 /******* form colors *********/
 

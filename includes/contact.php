@@ -14,7 +14,9 @@
     Telefon: <span class="bold-font">0707716601</span>
   </div>
 
-  <div class="row">
+  <?php require('includes/form/contact-form.php') ?>
+
+  <!-- <div class="row">
    <form class="col s12" action="../includes/php/mailer.php" method="post">
      <div class="row">
        <div class="input-field col s12">
@@ -56,7 +58,7 @@
       </div>
      </div>
    </form>
- </div>
+ </div> -->
 </div>
 <div class="modal-footer">
 </div>

@@ -180,10 +180,9 @@
   </div>
 </div>
 
-<!-- For large -->
-<div class="hide-on-med-and-down row  box">
-  <div class="" style="padding-top: 5vh;">
-    <div class="col l3 offset-l1 center-align tinyText">
+<div class="center-align">
+  <div class="row container" style="padding-top: 5vh;">
+    <div class="center-align tinyText">
       <span style="font-weight: bold">Kontakta oss</span>
       <br><br>
       Om ni har någon som helst fråga, hör gärna av er!
@@ -192,108 +191,9 @@
       <br>
       Telefon: 0707716601
     </div>
-    <form class="col l7" action="./includes/php/mailer.php" method="post">
-      <div class="row">
-        <div class="input-field col l6">
-          <i class="material-icons prefix">account_circle</i>
-          <input name="name" id="icon_prefix" type="text" class="validate">
-          <label for="name">Namn</label>
-        </div>
-        <div class="input-field col l6">
-          <i class="material-icons prefix">phone</i>
-          <input name="number" id="icon_telephone" type="tel" class="validate">
-          <label for="number">Telefon</label>
-        </div>
-
-        <div class="input-field col l6">
-          <i class="material-icons prefix">email</i>
-          <input name="email" id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-        <div class="input-field col l6">
-          <i class="material-icons prefix">map</i>
-          <input name="adress" id="adress" type="text" class="validate">
-          <label for="adress">Adress</label>
-        </div>
-
-        <div class="input-field col l10 offset-l1">
-          <i class="material-icons prefix">assignment</i>
-          <input name="subject" id="subject" type="text" class="validate">
-          <label for="subject">Ämne</label>
-        </div>
-        <div class="input-field col l8 offset-l2">
-          <i class="material-icons prefix">message</i>
-          <input name="message" id="message" type="text" class="validate">
-          <label for="message">Meddelande</label>
-        </div>
-       <div class="col l2 offset-l5 center-align">
-         <button class="btn waves-effect waves-light elliot-blue" type="submit" name="action">
-           Skicka
-           <i class="material-icons right">send</i>
-         </button>
-       </div>
-      </div>
-    </form>
+    <?php require('includes/form/contact-form.php') ?>
   </div>
 </div>
-
-<!-- For med and down -->
-<div class="hide-on-large-only">
-  <div class="box container center-align breadText" style="padding-top: 10vh;">
-    <span style="font-weight: bold">Kontakta oss</span>
-    <br><br>
-    Om ni har någon som helst fråga, hör gärna av er!
-    <br><br>
-    E-mail: elliot.berthold@outlook
-    <br>
-    Telefon: 0707716601
-  </div>
-  <div class="box-for-form container center-align">
-    <div class="row">
-     <form class="col s12" action="./includes/php/mailer.php" method="post">
-       <div class="row">
-         <div class="input-field col s12">
-           <i class="material-icons prefix">account_circle</i>
-           <input name="name" id="icon_prefix" type="text" class="validate">
-           <label for="name">Namn</label>
-         </div>
-         <div class="input-field col s12">
-           <i class="material-icons prefix">phone</i>
-           <input name="number" id="icon_telephone" type="tel" class="validate">
-           <label for="number">Telefon</label>
-         </div>
-         <div class="input-field col s12">
-           <i class="material-icons prefix">email</i>
-           <input name="email" id="email" type="email" class="validate">
-           <label for="email">Email</label>
-         </div>
-         <div class="input-field col s12">
-           <i class="material-icons prefix">map</i>
-           <input name="adress" id="adress" type="text" class="validate">
-           <label for="adress">Adress</label>
-         </div>
-         <div class="input-field col s12">
-           <i class="material-icons prefix">assignment</i>
-           <input name="subject" id="subject" type="text" class="validate">
-           <label for="subject">Ämne</label>
-         </div>
-         <div class="input-field col s12">
-           <i class="material-icons prefix">message</i>
-           <input name="message" id="message" type="text" class="validate">
-           <label for="message">Meddelande</label>
-         </div>
-
-        </div>
-        <button class="btn waves-effect waves-light elliot-blue" type="submit" name="action">
-          Skicka
-          <i class="material-icons right">send</i>
-        </button>
-       </div>
-     </form>
-   </div>
-  </div>
-</div>
-
 </main>
 
 <!-- FOOTER -->
