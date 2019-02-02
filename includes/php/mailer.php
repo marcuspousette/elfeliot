@@ -50,22 +50,24 @@ function plain_MailMessage($array){
   Message: $array[5]";
   return $content;
 }
-$mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+
+$hostName = 'n3plcpnl0267.prod.ams3.secureserver.net';
+
+$mail = new PHPMailer(true);
 try {
     //Server settings
-    $mail->SMTPDebug = 2;                                 // Enable verbose debug output
+    $mail->SMTPDebug = 0;
     $mail->CharSet = 'UTF-8';
-    $mail->isSMTP();                                      // Set mailer to use SMTP
-    // $mail->Host = 'smtp-mail.outlook.com';                // Specify main and backup SMTP servers
-    $mail->Host = "smtp-mail.outlook.com";
-    $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'elliot.berthold@outlook.com';         // SMTP username
-    $mail->Password = 'Husqvarna!2';                       // SMTP password
-    $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 587;                                    // TCP port to connect to
+    $mail->isSMTP();
+    $mail->Host = "n3plcpnl0267.prod.ams3.secureserver.net";
+    $mail->Username = 'contact@elfeliot.se';
+    $mail->Password = 'Husqvarna!2';
+    $mail->SMTPSecure= 'tls';
+    $mail->SMTPAuth = true;
+    $mail->Port = 587;
 
     //Recipients
-    $mail->setFrom('elliot.berthold@outlook.com', 'Elliot');
+    $mail->setFrom('contact@elfeliot.se', 'Elfeliot');
     $mail->addAddress('elliot.berthold@outlook.com', 'Elliot');     // Add a recipient
 
     /* Get the content from the form */
@@ -89,6 +91,7 @@ try {
     $mail->AltBody = $plain_message;
 
     if($mail->send()){
+      echo 'Message has been sent';
       require './redirect.php';
       exit();
     }
